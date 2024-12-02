@@ -93,8 +93,8 @@ Follow the interactive menu to explore various tools and features.
 
 ## Screenshots 🖼️
 
-| Feature                  | Screenshot Example                |
-|--------------------------|-----------------------------------|
+| Feature                  | Screenshot Example                                               |
+|--------------------------|------------------------------------------------------------------|
 | Main Menu                | ![Main Menu](screenshots/main_menu.png)                          |
 | System Information       | ![System Information](screenshots/system_information.png)        |
 | Disk Usage Analysis      | ![Disk Usage Analysis](screenshots/disk_usage.png)               |
