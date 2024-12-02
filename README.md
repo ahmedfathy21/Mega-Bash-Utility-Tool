@@ -61,15 +61,51 @@ chmod +x mega_bash_utility.sh
 
 ---
 
-## Installation 📥
+## Usage 📘
 
-1. Clone the repository:
- 
+Run the script using: 
+
 ```bash
-git clone https://github.com/yourusername/mega-bash-utility.git
+./mega_bash_utility.sh
 ```
-2. Navigate to the script directory:
- 
-```bash
-cd mega-bash-utility
-```
+Follow the interactive menu to explore various tools and features.
+
+---
+
+## Menu Options 📜
+
+| Option | Description                                |
+|--------|--------------------------------------------|
+| 1      | View detailed system information           |
+| 2      | Analyze disk usage                         |
+| 3      | Fetch network statistics                   |
+| 4      | Monitor real-time CPU usage                |
+| 5      | View real-time processes                   |
+| 6      | Perform a disk cleanup                     |
+| 7      | Check system health (CPU/disk)             |
+| 8      | Explore files and directories              |
+| 9      | Manage users (add/list/delete)             |
+| 10     | Generate and view recent system logs       |
+| 11     | View fun ASCII art                         |
+| 12     | Exit the utility                           |
+
+---
+
+## Screenshots 🖼️
+
+| Feature                  | Screenshot Example                |
+|--------------------------|-----------------------------------|
+| Main Menu                | *(Add a screenshot here)*         |
+| System Information       | *(Add a screenshot here)*         |
+| Disk Usage Analysis      | *(Add a screenshot here)*         |
+
+---
+
+## Contributing 🤝
+
+Contributions are welcome! To contribute:
+
+1. Fork the repository.
+2. Create a feature branch:
+   ```bash
+   git checkout -b feature/new-feature
