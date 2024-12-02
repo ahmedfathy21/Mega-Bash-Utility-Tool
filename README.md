@@ -35,13 +35,41 @@ Ensure the following tools are installed on your system:
 Install missing dependencies with:
  
 ```bash
-  sudo apt update
-  sudo apt install iftop lm-sensors smartmontools -y
+sudo apt update
+sudo apt install iftop lm-sensors smartmontools -y
 ```
+
+---
+
 ## Installation 📥
 
 1. Clone the repository:
  
 ```bash
 git clone https://github.com/yourusername/mega-bash-utility.git
+```
+2. Navigate to the script directory:
+ 
+```bash
+cd mega-bash-utility
+```
+1. Make the script executable:
+ 
+```bash
+chmod +x mega_bash_utility.sh
+```
+
+---
+
+## Installation 📥
+
+1. Clone the repository:
+ 
+```bash
+git clone https://github.com/yourusername/mega-bash-utility.git
+```
+2. Navigate to the script directory:
+ 
+```bash
+cd mega-bash-utility
 ```
