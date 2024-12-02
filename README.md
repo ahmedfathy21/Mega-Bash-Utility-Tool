@@ -95,7 +95,7 @@ Follow the interactive menu to explore various tools and features.
 
 | Feature                  | Screenshot Example                |
 |--------------------------|-----------------------------------|
-| Main Menu                | *(Add a screenshot here)*         |
+| Main Menu                | ![Main Menu](screenshots/main_menu.png)        |
 | System Information       | *(Add a screenshot here)*         |
 | Disk Usage Analysis      | *(Add a screenshot here)*         |
 
