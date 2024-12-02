@@ -46,12 +46,12 @@ sudo apt install iftop lm-sensors smartmontools -y
 1. Clone the repository:
  
 ```bash
-git clone https://github.com/yourusername/mega-bash-utility.git
+https://github.com/Mohamedzonkol/Mega-Bash-Utility-Tool.git
 ```
 2. Navigate to the script directory:
  
 ```bash
-cd mega-bash-utility
+cd Mega-Bash-Utility-Tool
 ```
 1. Make the script executable:
  
