@@ -122,6 +122,7 @@ Contributions are welcome! To contribute:
 
 ---
 
-## Author ✍️
-Created with ❤️ by Mohamed Zonkol.
+## Author ✍️  
+Created with ❤️ by [Mohamed Zonkol](https://github.com/mohamedzonkol).  
+For inquiries, email: mo.zonkol@gmail.com
 
