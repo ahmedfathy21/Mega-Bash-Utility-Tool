@@ -8,6 +8,7 @@ COLOR_RED="\033[1;31m"
 COLOR_CYAN="\033[1;36m"
 COLOR_MAGENTA="\033[1;35m"
 text="Enjoy Man"
+
 # Function: Display Banner
 show_banner() {
     echo -e "${COLOR_GREEN}"
@@ -23,21 +24,28 @@ show_banner() {
     echo "-------------------------------------------------------${text}"
 }
 
-# Function: Display Menu
+# Function: Display Menu using Rofi
 show_menu() {
-    echo -e "${COLOR_YELLOW}Choose an option:${COLOR_RESET}"
-    echo "1. System Information"
-    echo "2. Disk Usage"
-    echo "3. Network Statistics"
-    echo "4. CPU Usage Monitor"
-    echo "5. Real-Time Process Viewer"
-    echo "6. Disk Cleanup"
-    echo "7. System Health Check"
-    echo "8. File Explorer"
-    echo "9. User Management"
-    echo "10. Generate Logs"
-    echo "11. Fun ASCII Art"
-    echo "12. Exit"
+    options="System Information\nDisk Usage\nNetwork Statistics\nCPU Usage Monitor\nReal-Time Process Viewer\nDisk Cleanup\nSystem Health Check\nFile Explorer\nUser Management\nGenerate Logs\nFun ASCII Art\nExit"
+    choice=$(echo -e "$options" | rofi -dmenu -p "Choose an option:")
+    case $choice in
+        "System Information") system_info ;;
+        "Disk Usage") disk_usage ;;
+        "Network Statistics") network_stats ;;
+        "CPU Usage Monitor") cpu_usage_monitor ;;
+        "Real-Time Process Viewer") real_time_process_viewer ;;
+        "Disk Cleanup") disk_cleanup ;;
+        "System Health Check") system_health_check ;;
+        "File Explorer") file_explorer ;;
+        "User Management") user_management ;;
+        "Generate Logs") generate_logs ;;
+        "Fun ASCII Art") ascii_art ;;
+        "Exit") 
+            echo -e "${COLOR_RED}Exiting... Goodbye!${COLOR_RESET}"
+            exit 0
+            ;;
+        *) echo -e "${COLOR_RED}Invalid option. Please try again.${COLOR_RESET}" ;;
+    esac
 }
 
 # Function: Show System Information
@@ -188,25 +196,5 @@ show_banner
 while true; do
     echo
     show_menu
-    read -rp "Enter your choice [1-12]: " choice
-    echo
-    case $choice in
-        1) system_info ;;
-        2) disk_usage ;;
-        3) network_stats ;;
-        4) cpu_usage_monitor ;;
-        5) real_time_process_viewer ;;
-        6) disk_cleanup ;;
-        7) system_health_check ;;
-        8) file_explorer ;;
-        9) user_management ;;
-        10) generate_logs ;;
-        11) ascii_art ;;
-        12) 
-            echo -e "${COLOR_RED}Exiting... Goodbye!${COLOR_RESET}"
-            exit 0
-            ;;
-        *) echo -e "${COLOR_RED}Invalid option. Please try again.${COLOR_RESET}" ;;
-    esac
-    echo
+    
 done
